@@ -1,0 +1,533 @@
+<!--@layout(/layout/basic/layout_jpn.html)-->
+<script>
+  const currentPage = 'business';
+
+  const langLinks = {
+  business: {
+         kor: 'https://herzion.com/new_subpage/business/business.html',
+    eng: 'https://en.herzion.com/new_subpage/business/business_eng.html',
+    jpn: 'https://jp.herzion.com/new_subpage/business/business_jpn.html',
+    cny: 'https://cn.herzion.com/new_subpage/business/business_cny.html'
+  },
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const mobileLangDiv = document.getElementById('mobile_lang_links');
+    const desktopLangUl = document.getElementById('desktop_lang_links');
+    const links = langLinks[currentPage];
+
+    if (mobileLangDiv && links) {
+      mobileLangDiv.innerHTML = `
+        <a href="${links.kor}"><button>KOR</button></a>
+        <a href="${links.eng}"><button>ENG</button></a>
+        <a href="${links.jpn}"><button  class="active">JPN</button></a>
+        <a href="${links.cny}"><button>CHN</button></a>
+      `;
+    }
+
+    if (desktopLangUl && links) {
+      desktopLangUl.innerHTML = `
+        <a href="${links.kor}"><li data-value="kor">KOR</li></a>
+        <a href="${links.eng}"><li data-value="eng">ENG</li></a>
+        <a href="${links.jpn}"><li data-value="jpn"  class="active">JPN</li></a>
+        <a href="${links.cny}"><li data-value="cny">CHN</li></a>
+      `;
+    }
+  });
+</script>
+
+
+
+ <link rel="stylesheet" href="business_jpn.css?=20250709_3" />
+    <!-- 반응형 스타일 -->
+    <link rel="stylesheet" href="mo_business_jpn.css?=20250709_4" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pretendard@1.3.8/dist/web/static/pretendard.css"
+      rel="stylesheet"
+    />
+    <!-- header css -->
+    <link rel="stylesheet" href="../layout_new/header.css?=20250710" />
+    <!-- footer css -->
+    <link rel="stylesheet" href="../layout_new/footer.css?=20250731_1" />
+    <!-- layout js -->
+    <script src="../layout_new/layout.js" defer></script>
+    <script src="business.js" defer></script>
+
+    <main>
+      <!-- 메인 베너 부분 -->
+      <section class="banner_section">
+        <div class="hero">
+          <div class="hero_content">
+            <h1>Business</h1>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Vibroacoustic Technology Innovation 섹션 -->
+      <section class="vibroacoustic_section">
+        <article class="container">
+            <h2 class="section_title">Vibroacoustic Technology Innovation</h2>
+            <p class="section_sub_title pc_text">振動と音を組み合わせた革新的な技術により、脳の働きを活性化。<br>体に負担をかけない安全な方法で、日常的に脳の健康をサポートします。</p>
+            <p class="section_sub_title mo_text  tab_text">振動と音を組み合わせた革新的な技術により、脳の働きを活性化。<br>体に負担をかけない安全な方法で、日常的に脳の健康をサポートします。</p>
+            <p class="section_sub_title mo_text momo_text">振動と音を組み合わせた革新的な技術により、脳の働きを活性化。体に負担をかけない安全な方法で、日常的に脳の健康をサポートします。</p>
+            <div class="section1_img_group">
+              <!-- pc 버전,테블릿버전 이미지 -->
+              <img class="pc_img tab_img" src="images/section1_img_1.png"></img>
+              <img class="pc_img tab_img" src="images/section1_img_2.png"></img>
+              <!-- 모바일버전 이미지 -->
+              <img class="mo_img tab_none_img" src="images/mo/mo_section1_img_1.png"></img>
+              <img class="mo_img tab_none_img" src="images/mo/mo_section1_img_2.png"></img>
+            </div>
+            <div class="section1_content_container">
+              <div class="section1_content_box">
+                <h3>神経の健康の最適化</h3>
+                <p>神経機能を高める脳科学に基づいたケア</p>
+              </div>
+              <div class="section1_content_box">
+                <h3>科学的に検証されたシステム</h3>
+                <p>データと実験で裏付けられた信頼性</p>
+              </div>
+              <div class="section1_content_box">
+                <h3>カスタマイズされた振動・音響刺激</h3>
+                <p>感覚の深さを調整する繊細な刺激設計</p>
+              </div>
+              <div class="section1_content_box">
+                <h3>先端技術の融合</h3>
+                <p>科学・健康・デザインの融合</p>
+              </div>
+            </div>
+        </article>
+      </section>
+
+      <!-- Cognitive Health Solutions 섹션 -->
+      <section class="cognitive_health_section">
+        <article class="container">
+          <div class="section2_title_box">
+            <h2 class="section_title">Cognitive Health Solutions</h2>
+            <p class="pc_text">最新の脳科学研究に基づいて設計された本ソリューションは、認知機能をサポートし、<br>
+             脳の健康維持を促します。日常の中で負担なく使用できる、快適なブレインケアを実現します。</p>
+              <p class="mo_text tab_text">最新の脳科学研究に基づいて設計された本ソリューションは、<br>
+                認知機能をサポートし、脳の健康維持を促します。
+日常の中で負担なく使用できる、快適なブレインケアを実現します。</p>
+
+            <p class="mo_text momo_text">最新の脳科学研究に基づいて設計された本ソリューションは、
+             認知機能をサポートし、脳の健康維持を促します。
+日常の中で負担なく使用できる、快適なブレインケアを実現します。.</p>
+          </div>
+          <div class="section_content_3box_continer">
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section2_content_img_1"></div>
+              <h3> ウェアラブルデバイス</h3>
+
+              <p class="pc_text">日常生活に溶け込むウェアラブルタイプで、
+継続的に、そして手軽に認知サポートが可能です。</p>
+              <p class="mo_text">日常生活に溶け込むウェアラブルタイプで、
+継続的に、そして手軽に認知サポートが可能です。</p>
+            </div>
+
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section2_content_img_2"></div>
+              <h3>体に負担をかけないテクノロジー</h3>
+              <p class="pc_text">
+                薬や手術に頼らず、
+安全で自然なアプローチで脳機能を支えるソリューションです。
+              </p>
+              <p class="mo_text">薬や手術に頼らず、
+安全で自然なアプローチで脳機能を支えるソリューションです。</p>
+            </div>
+
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section2_content_img_3"></div>
+              <h3> パーソナライズドプログラム</h3>
+              <p class="pc_text">個々の認知状態やニーズに合わせて、
+最適化された刺激パターンを提供し、体感効果を高めます。
+              </p>
+              <p class="mo_text">個々の認知状態やニーズに合わせて、
+最適化された刺激パターンを提供し、体感効果を高めます。</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Lifestyle Wellness 섹션 -->
+      <section class="lifestyle_wellness_section">
+        <article class="container section3_container">
+          <div class="section3_container_left">
+            <h2 class="section_title">Lifestyle Wellness</h2>
+            <p class="section_sub_title pc_text">
+              ヘルジオンは、低周波の振動音響技術を活用し、
+脳のウェルネス領域に幅広く応用可能なソリューションです。
+ウェアラブル形式で、
+日常のケアから職場でのパフォーマンス向上まで柔軟に対応します。
+            </p>
+            <p class="section_sub_title tab_text">
+              ヘルジオンは、低周波の振動音響技術を活用し、
+脳のウェルネス領域に幅広く応用可能なソリューションです。
+ウェアラブル形式で、
+日常のケアから職場でのパフォーマンス向上まで柔軟に対応します。
+            </p>
+            <p class="section_sub_title mo_text momo_text">
+              ヘルジオンは、低周波の振動音響技術を活用し、
+脳のウェルネス領域に幅広く応用可能なソリューションです。
+ウェアラブル形式で、
+日常のケアから職場でのパフォーマンス向上まで柔軟に対応します。
+            </p>
+          </div>
+          <!-- pc 전용 -->
+           <div class="pc_text">
+            <div class="section3_container_right ">
+              <div class="content_left_box">
+                <div class="section3_img_box">
+                  <h1>01</h1>
+                  <h2>日常ウェルネスケア</h2>
+                  <p>高齢者や一般ユーザー向けの<br>
+認知サポート・ウェルネス製品開発</p>
+                  <img src="images/section3_icon_1.svg" alt=""></img>
+                </div>
+                <div class="section3_img_box">
+                  <h1>03</h1>
+                  <h2>睡眠リズムサポート</h2>
+                  <p>睡眠の質を高めることを目的とした低周波刺激技術を採用。
+睡眠家電との連携や、医療分野での活用にも対応しています。</p>
+                  <img src="images/section3_icon_3.svg" alt=""></img>
+                </div>
+              </div>
+              <div class="content_right_box">
+                <div class="section3_img_box">
+                  <h1>02</h1>
+                  <h2>ストレス・情緒ケア</h2>
+                  <p>感情のコントロールやリラックスのサポートに。
+瞑想コンテンツとの組み合わせにも最適です。</p>
+                  <img src="images/section3_icon_2.svg" alt=""></img>
+                </div>
+                <div class="section3_img_box">
+                  <h1>04</h1>
+                  <h2>集中力・作業効率支援</h2>
+                  <p>教育・創造職・リモートワーク向けの
+脳活性化ソリューション
+B2B展開可</p>
+                  <img style="width: 72px;" src="images/section3_icon_4.svg" alt=""></img>
+                </div>
+              </div>
+            </div>
+           </div>
+
+
+          <!-- 모바일전용 -->
+          <div class="mo_text">
+            <div class="section3_container_right">
+              <div class="section3_img_box">
+                <h1>01</h1>
+                <h2>日常ウェルネスケア</h2>
+                <p>高齢者や一般ユーザー向けの
+認知サポート・ウェルネス製品開発</p>
+                <img src="images/section3_icon_1.svg" alt=""></img>
+              </div>
+              <div class="section3_img_box">
+                <h1>02</h1>
+                <h2>ストレス・情緒ケア</h2>
+                <p>感情のコントロールやリラックスのサポートに。
+瞑想コンテンツとの組み合わせにも最適です。</p>
+                <img src="images/section3_icon_2.svg" alt=""></img>
+              </div>
+              <div class="section3_img_box">
+                <h1>03</h1>
+                <h2>睡眠リズムサポート</h2>
+                <p>睡眠の質を高めることを目的とした低周波刺激技術を採用。
+睡眠家電との連携や、医療分野での活用にも対応しています。</p>
+                <img src="images/section3_icon_3.svg" alt=""></img>
+              </div>
+              <div class="section3_img_box">
+                <h1>04</h1>
+                <h2>集中力・作業効率支援</h2>
+                <p>教育・創造職・リモートワーク向けの
+脳活性化ソリューション
+B2B展開可</p>
+                <img class="section3_icon_4" src="images/section3_icon_4.svg" alt=""></img>
+              </div>
+          </div>
+        </div>
+
+        </article>
+      </section>
+
+      <!-- Sports & Fitness Solutions 섹션 -->
+      <section class="sports_fitness_section">
+        <article class="container">
+          <div class="section2_title_box">
+            <h2 class="section_title">Sports & Fitness Solutions</h2>
+            <p class="pc_text">パフォーマンス向上とリカバリーを支えるニューロウェルネス技術。<br>
+ヘルジオンの低周波振動音響刺激は、運動前の神経系活性化や運動後の回復をサポートし、<br>
+スポーツ、フィットネス、リハビリ分野での幅広い活用が期待できます。
+            </p>
+            <p class="pc_text tab_text">パフォーマンス向上とリカバリーを支えるニューロウェルネス技術。<br>
+ヘルジオンの低周波振動音響刺激は、運動前の神経系活性化や運動後の回復をサポートし、<br>
+スポーツ、フィットネス、リハビリ分野での幅広い活用が期待できます。
+            </p>
+            <p class="mo_text momo_text">
+              パフォーマンス向上とリカバリーを支えるニューロウェルネス技術。
+ヘルジオンの低周波振動音響刺激は、運動前の神経系活性化や運動後の回復をサポートし、
+スポーツ、フィットネス、リハビリ分野での幅広い活用が期待できます。
+            </p>
+          </div>
+
+          <div class="section_content_3box_continer">
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section4_content_img_1"></div>
+              <h3>運動前の準備支援</h3>
+              <p class="pc_text">神経系を刺激して筋肉の反応性と集中力を高め、
+最適なコンディションで運動を始めるサポートを行います。</p>
+              <p class="mo_text">神経系を刺激して筋肉の反応性と集中力を高め、
+最適なコンディションで運動を始めるサポートを行います。</p>
+            </div>
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section4_content_img_2"></div>
+              <h3>運動中のパフォーマンスサポート</h3>
+              <p>集中力と反応速度を高め、より優れたパフォーマンスを実現します。</p>
+            </div>
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section4_content_img_3"></div>
+              <h3>運動後の回復ケア</h3>
+              <p>神経刺激によって筋肉の疲労を軽減し、リカバリーをより効率的にサポートします。                
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Digital Health Platform 섹션 -->
+      <section class="digital_health_section">
+        <article class="container">
+          <div class="section2_title_box">
+            <h2 class="section_title">Digital Health Platform</h2>
+            <p class="pc_text">
+              個別に最適化された脳ウェルネスを実現するデジタルヘルス基盤のプラットフォーム、<br>
+ヘルジオンは脳波やバイオ信号を収集・分析し、<br>
+ユーザーの状態に応じた最適な刺激プログラムを提案します。
+            </p>
+            <p class="pc_text tab_text">
+             個別に最適化された脳ウェルネスを実現するデジタルヘルス基盤のプラットフォーム、
+ヘルジオンは脳波やバイオ信号を収集・分析し、
+ユーザーの状態に応じた最適な刺激プログラムを提案します。
+            </p>
+            <p class="mo_text momo_text">
+              個別に最適化された脳ウェルネスを実現するデジタルヘルス基盤のプラットフォーム、
+ヘルジオンは脳波やバイオ信号を収集・分析し、
+ユーザーの状態に応じた最適な刺激プログラムを提案します。
+            </p>
+          </div>
+          <div class="health_content_container">
+            <div class="health_img_box health_img_1">
+              <div class="helath_img_text_box">
+                <h1>データ分析技術</h1>
+                <p class="pc_text">
+                  脳波や生体データを活用して、
+認知状態の可視化や行動パターンの
+傾向を分析します。
+                </p>
+                <p class="mo_text">
+                脳波や生体データを活用して、
+認知状態の可視化や行動パターンの
+傾向を分析します。
+                </p>
+              </div> 
+            </div>
+            <div class="health_img_box health_img_2">
+              <div class="helath_img_text_box">
+                <h1>リアルタイムモニタリング機能</h1>
+              <p class="pc_text">
+                刺激中の生体反応を継続的にトラッキングし、
+その変化を記録・分析することで、
+効果の検証が可能です。
+              </p>
+              <p class="mo_text">
+                刺激中の生体反応を継続的にトラッキングし、
+その変化を記録・分析することで、
+効果の検証が可能です。
+              </p>
+              </div>
+            </div>
+            <div class="health_img_box health_img_3">
+              <div class="helath_img_text_box">
+                <h1> 統合型健康管理インターフェース</h1>
+              <p class="pc_text">
+                脳機能だけでなく、睡眠やストレス、情緒のバランスまで
+包括的にサポートする、
+高い拡張性を持つプラットフォームです。
+              </p>
+              <p class="mo_text">
+                脳機能だけでなく、睡眠やストレス、情緒のバランスまで
+包括的にサポートする、
+高い拡張性を持つプラットフォームです。
+              </p>
+              </div>
+            </div>
+            <div class="health_img_box health_img_4">
+              <div class="helath_img_text_box">
+                <h1>個別対応型の刺激提案</h1>
+              <p class="pc_text">
+                AIアルゴリズムにより、
+各ユーザーの状態に基づいて
+最適な刺激コンテンツやパターンを提案します。
+              </p>
+              <p class="mo_text">
+                AIアルゴリズムにより、
+各ユーザーの状態に基づいて
+最適な刺激コンテンツやパターンを提案します。
+              </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- B2B Solutions 섹션 -->
+      <section class="b2b_solutions_section">
+        <article class="container">
+          <div class="section2_title_box">
+            <h2 class="section_title">B2B Solutions</h2>
+            <p class="pc_text">医療・研究・企業向けに最適化されたニューロウェルネスソリューションヘルジオンは、<br>各機関の目的やニーズに応じたカスタマイズ可能な脳健康テクノロジーを提供します。</p>
+              <p class="pc_text tab_text">医療・研究・企業向けに最適化されたニューロウェルネスソリューションヘルジオンは、各機関の目的やニーズに応じたカスタマイズ可能な脳健康テクノロジーを提供します。</p>
+            <p class="mo_text momo_text">
+              医療・研究・企業向けに最適化されたニューロウェルネスソリューション
+ヘルジオンは、各機関の目的やニーズに応じたカスタマイズ可能な脳健康テクノロジーを提供します。
+
+            </p>
+          </div>
+          <div class="section_content_3box_continer">
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section6_content_img_1"></div>
+              <h3>医療機関との連携</h3>
+              <p class="pc_text">病院・クリニック向けの専門的な神経刺激ソリューションを提供し、
+認知機能の維持・リハビリ・補助療法などにご活用いただけます。</p>
+              <p class="mo_text">
+                病院・クリニック向けの専門的な神経刺激ソリューションを提供し、
+認知機能の維持・リハビリ・補助療法などにご活用いただけます。
+              </p>
+            </div>
+
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section6_content_img_2"></div>
+              <h3> 研究機関支援</h3>
+              <p class="pc_text">脳科学や認知研究に対応するための、
+高度な刺激装置やデータ解析ツールを提供しています。
+
+              </p>
+              <p class="mo_text">
+               脳科学や認知研究に対応するための、
+高度な刺激装置やデータ解析ツールを提供しています。
+
+              </p>
+            </div>
+            <div class="section_content_3box">
+              <div class="section_content_img_3box section6_content_img_3"></div>
+              <h3>企業向けウェルネスプログラム</h3>
+              <p class="pc_text">従業員のストレス軽減と集中力向上を目的とした、
+カスタマイズ可能なブレインケアプログラムを構築し、
+職場の健康と生産性をサポートします。
+              </p>
+              <p class="mo_text">
+                従業員のストレス軽減と集中力向上を目的とした、
+カスタマイズ可能なブレインケアプログラムを構築し、
+職場の健康と生産性をサポートします。
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Global Market Expansion Strategy 섹션 -->
+      <section class="global_market_expansion_section">
+        <article class="container">
+          <h2 class="section_title" style="color: #ffffff;">Global Market Expansion Strategy</h2>
+          <p class="global_subtitle">世界の医療およびウェルネス市場をターゲットに、
+現地ニーズへの最適化と認証取得を通じて成長を加速します。
+</p>
+        </article>
+      </section>
+
+     <!-- Global Market Expansion Strategy 서브 섹션 -->
+      <section class="global_market_expansion_sub_section">
+        <article class="container global_container">
+          <div class="global_text_4box">
+            <h1>01</h1>
+            <h2>韓国国内市場の安定化</h2>
+            <p class="pc_text">
+              韓国国内の医療・ウェルネス市場におけるブランドプレゼンスを強化し、
+製品ラインの多様化を通じて基盤を固めます。
+            </p>
+            <p class="pc_text tab_text">
+              韓国国内の医療・ウェルネス市場におけるブランドプレゼンスを強化し、
+製品ラインの多様化を通じて基盤を固めます。
+            </p>
+            <p class="mo_text momo_text">
+             韓国国内の医療・ウェルネス市場におけるブランドプレゼンスを強化し、
+製品ラインの多様化を通じて基盤を固めます。
+            </p>
+          </div>
+          <div class="global_text_4box">
+            <h1>02</h1>
+            <h2>アジア市場への展開</h2>
+            <p class="pc_text">
+             地理的優位性と高まる需要を活かし、
+現地に最適化されたマーケティング戦略と提携を推進します。
+            </p>
+            <p class="pc_text tab_text">
+             地理的優位性と高まる需要を活かし、
+現地に最適化されたマーケティング戦略と提携を推進します。
+            </p>
+            <p class="mo_text momo_text">
+             地理的優位性と高まる需要を活かし、
+現地に最適化されたマーケティング戦略と提携を推進します。
+            </p>
+          </div>
+
+          <div class="global_text_4box">
+            <h1>03</h1>
+            <h2>北米・欧州市場への進出</h2>
+            <p class="pc_text">
+             グローバル認証の取得を通じて先進国市場への参入を進め、
+現地販売ネットワークの構築とブランド信頼の確立を図ります。
+            </p>
+            <p class="pc_text tab_text">
+              グローバル認証の取得を通じて先進国市場への参入を進め、
+現地販売ネットワークの構築とブランド信頼の確立を図ります。
+            </p>
+            <p class="mo_text momo_text">
+             グローバル認証の取得を通じて先進国市場への参入を進め、
+現地販売ネットワークの構築とブランド信頼の確立を図ります。
+            </p>
+          </div>
+
+          <div class="global_text_4box">
+            <h1>04</h1>
+            <h2>グローバルブランドの確立</h2>
+            <p class="pc_text">
+              技術革新と臨床的有効性を強みに、
+世界の脳健康市場におけるリーディングブランドを目指します。
+
+            </p>
+            <p class="pc_text tab_text">
+             技術革新と臨床的有効性を強みに、
+世界の脳健康市場におけるリーディングブランドを目指します。
+
+            </p>
+            <p class="mo_text momo_text">
+             技術革新と臨床的有効性を強みに、
+世界の脳健康市場におけるリーディングブランドを目指します。
+
+            </p>
+          </div>
+
+        </article>
+      </section>
+
+    
+    </main>
+
+
